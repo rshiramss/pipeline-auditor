@@ -1,827 +1,706 @@
 [
   {
     "id": "c_001",
-    "name": "Pavel Farouk",
-    "role": "FDE",
-    "stage": "onsite_scheduled",
-    "stage_history": [
-      {
-        "stage": "applied",
-        "timestamp": "2026-05-23T04:32:15.271476Z"
-      },
-      {
-        "stage": "screen_scheduled",
-        "timestamp": "2026-05-27T21:04:55.973296Z"
-      },
-      {
-        "stage": "screen_done",
-        "timestamp": "2026-05-31T22:02:24.331068Z"
-      },
-      {
-        "stage": "onsite_scheduled",
-        "timestamp": "2026-06-03T20:42:05.378789Z"
-      }
-    ],
-    "scheduled_events": [
-      {
-        "type": "onsite",
-        "timestamp": "2026-06-10T05:30:26.012445Z"
-      }
-    ],
-    "owner": "erin",
-    "source": "Codeforces top list",
-    "notes": "IOI bronze '18, infra eng at a fintech; asked about equity split",
-    "last_updated": "2026-06-03T20:42:05.378789Z"
-  },
-  {
-    "id": "c_002",
-    "name": "Iris Chen",
-    "role": "Growth Strategy Lead",
-    "stage": "screen_done",
-    "stage_history": [
-      {
-        "stage": "applied",
-        "timestamp": "2026-05-27T17:31:53.038453Z"
-      },
-      {
-        "stage": "screen_scheduled",
-        "timestamp": "2026-05-31T00:32:47.652076Z"
-      },
-      {
-        "stage": "screen_done",
-        "timestamp": "2026-06-04T04:27:31.625831Z"
-      }
-    ],
-    "scheduled_events": [
-      {
-        "type": "onsite",
-        "timestamp": "2026-06-10T23:04:17.525629Z"
-      }
-    ],
-    "owner": "atlas",
-    "source": "referral",
-    "notes": "USACO Gold '19, now at a Series B; HM very positive",
-    "last_updated": "2026-06-04T04:27:31.625831Z"
-  },
-  {
-    "id": "c_003",
-    "name": "Iris Lin",
-    "role": "FDE",
-    "stage": "onsite_scheduled",
-    "stage_history": [
-      {
-        "stage": "applied",
-        "timestamp": "2026-05-23T20:47:44.554789Z"
-      },
-      {
-        "stage": "screen_scheduled",
-        "timestamp": "2026-05-26T11:56:12.526961Z"
-      },
-      {
-        "stage": "screen_done",
-        "timestamp": "2026-05-30T19:51:51.791781Z"
-      },
-      {
-        "stage": "onsite_scheduled",
-        "timestamp": "2026-06-04T11:21:23.166765Z"
-      }
-    ],
-    "scheduled_events": [
-      {
-        "type": "onsite",
-        "timestamp": "2026-06-10T16:32:25.443408Z"
-      }
-    ],
-    "owner": "dana",
-    "source": "HN Who's Hiring",
-    "notes": "IOI bronze '18, infra eng at a fintech; asked about equity split",
-    "last_updated": "2026-06-04T11:21:23.166765Z"
-  },
-  {
-    "id": "c_004",
-    "name": "Kofi Ramirez",
-    "role": "Growth Strategy Lead",
-    "stage": "screen_scheduled",
-    "stage_history": [
-      {
-        "stage": "applied",
-        "timestamp": "2026-05-29T13:37:31.478811Z"
-      },
-      {
-        "stage": "screen_scheduled",
-        "timestamp": "2026-06-03T11:30:41.101505Z"
-      }
-    ],
-    "scheduled_events": [
-      {
-        "type": "screen",
-        "timestamp": "2026-06-10T06:31:20.596073Z"
-      }
-    ],
-    "owner": "erin",
-    "source": "HN Who's Hiring",
-    "notes": "USACO Gold '19, now at a Series B; wants remote-first",
-    "last_updated": "2026-06-03T11:30:41.101505Z"
-  },
-  {
-    "id": "c_005",
-    "name": "Hana Pillai",
-    "role": "Growth Strategy Lead",
-    "stage": "onsite_done",
-    "stage_history": [
-      {
-        "stage": "applied",
-        "timestamp": "2026-05-24T01:09:43.788655Z"
-      },
-      {
-        "stage": "screen_scheduled",
-        "timestamp": "2026-05-28T06:28:03.126927Z"
-      },
-      {
-        "stage": "screen_done",
-        "timestamp": "2026-05-31T12:17:52.745030Z"
-      },
-      {
-        "stage": "onsite_scheduled",
-        "timestamp": "2026-06-03T23:22:14.171093Z"
-      },
-      {
-        "stage": "onsite_done",
-        "timestamp": "2026-06-07T05:02:15.665080Z"
-      }
-    ],
-    "scheduled_events": [],
-    "owner": "atlas",
-    "source": "IOI alumni list",
-    "notes": "Kaggle GM, data eng at a scale-up; moving fast, has competing offer",
-    "last_updated": "2026-06-07T05:02:15.665080Z"
-  },
-  {
-    "id": "c_006",
-    "name": "Ravi Hoffman",
-    "role": "Customer Success Lead",
-    "stage": "screen_scheduled",
-    "stage_history": [
-      {
-        "stage": "applied",
-        "timestamp": "2026-06-02T08:39:51.041784Z"
-      },
-      {
-        "stage": "screen_scheduled",
-        "timestamp": "2026-06-04T21:16:02.973491Z"
-      }
-    ],
-    "scheduled_events": [
-      {
-        "type": "screen",
-        "timestamp": "2026-06-09T18:54:20.784521Z"
-      }
-    ],
-    "owner": "dana",
-    "source": "LinkedIn",
-    "notes": "USACO Gold '19, now at a Series B; needs visa transfer",
-    "last_updated": "2026-06-04T21:16:02.973491Z"
-  },
-  {
-    "id": "c_007",
-    "name": "Freya Sharma",
+    "name": "Hassan Hoffman",
     "role": "Growth Strategist",
     "stage": "applied",
     "stage_history": [
       {
         "stage": "applied",
-        "timestamp": "2026-05-29T16:00:43.057942Z"
+        "timestamp": "2026-06-06T23:32:02.389173Z"
       }
     ],
     "scheduled_events": [],
-    "owner": "dana",
-    "source": "USACO outreach",
-    "notes": "USACO Platinum '21, new grad; moving fast, has competing offer",
-    "last_updated": "2026-05-29T16:00:43.057942Z"
-  },
-  {
-    "id": "c_008",
-    "name": "Noor Haddad",
-    "role": "Growth Strategy Lead",
-    "stage": "applied",
-    "stage_history": [
-      {
-        "stage": "applied",
-        "timestamp": "2026-05-27T01:17:26.778128Z"
-      }
-    ],
-    "scheduled_events": [],
-    "owner": "dana",
-    "source": "conference booth",
-    "notes": "Putnam top-200, ex-quant dev; needs visa transfer",
-    "last_updated": "2026-05-27T01:17:26.778128Z"
-  },
-  {
-    "id": "c_009",
-    "name": "Wei Tanaka",
-    "role": "FDE",
-    "stage": "applied",
-    "stage_history": [
-      {
-        "stage": "applied",
-        "timestamp": "2026-05-26T01:54:02.565823Z"
-      }
-    ],
-    "scheduled_events": [],
-    "owner": "atlas",
-    "source": "conference booth",
-    "notes": "Codeforces master, ML platform work; strong systems background",
-    "last_updated": "2026-05-26T01:54:02.565823Z"
-  },
-  {
-    "id": "c_010",
-    "name": "Marek Sokolov",
-    "role": "Growth Strategy Lead",
-    "stage": "onsite_done",
-    "stage_history": [
-      {
-        "stage": "applied",
-        "timestamp": "2026-05-21T22:05:47.149745Z"
-      },
-      {
-        "stage": "screen_scheduled",
-        "timestamp": "2026-05-24T22:08:50.335593Z"
-      },
-      {
-        "stage": "screen_done",
-        "timestamp": "2026-05-28T19:29:41.458029Z"
-      },
-      {
-        "stage": "onsite_scheduled",
-        "timestamp": "2026-05-31T00:28:25.525156Z"
-      },
-      {
-        "stage": "onsite_done",
-        "timestamp": "2026-06-03T07:18:18.465359Z"
-      }
-    ],
-    "scheduled_events": [],
-    "owner": "dana",
-    "source": "referral",
-    "notes": "USACO Platinum '21, new grad; needs visa transfer",
-    "last_updated": "2026-06-03T07:18:18.465359Z"
-  },
-  {
-    "id": "c_011",
-    "name": "Noor Sato",
-    "role": "FDE",
-    "stage": "onsite_done",
-    "stage_history": [
-      {
-        "stage": "applied",
-        "timestamp": "2026-05-23T01:05:42.705186Z"
-      },
-      {
-        "stage": "screen_scheduled",
-        "timestamp": "2026-05-27T00:54:08.685245Z"
-      },
-      {
-        "stage": "screen_done",
-        "timestamp": "2026-05-30T08:30:36.619691Z"
-      },
-      {
-        "stage": "onsite_scheduled",
-        "timestamp": "2026-06-01T18:50:29.340836Z"
-      },
-      {
-        "stage": "onsite_done",
-        "timestamp": "2026-06-04T04:24:01.297964Z"
-      }
-    ],
-    "scheduled_events": [],
-    "owner": "atlas",
+    "owner": "erin",
     "source": "HN Who's Hiring",
-    "notes": "Kaggle GM, data eng at a scale-up; needs visa transfer",
-    "last_updated": "2026-06-04T04:24:01.297964Z"
+    "notes": "Codeforces master, ML platform work; moving fast, has competing offer",
+    "last_updated": "2026-06-06T23:32:02.389173Z"
   },
   {
-    "id": "c_012",
-    "name": "Felix Horak",
+    "id": "c_002",
+    "name": "Wei Qureshi",
     "role": "Growth Strategy Lead",
-    "stage": "onsite_scheduled",
-    "stage_history": [
-      {
-        "stage": "applied",
-        "timestamp": "2026-05-25T00:35:46.149317Z"
-      },
-      {
-        "stage": "screen_scheduled",
-        "timestamp": "2026-05-29T02:19:28.877741Z"
-      },
-      {
-        "stage": "screen_done",
-        "timestamp": "2026-05-31T19:17:04.588435Z"
-      },
-      {
-        "stage": "onsite_scheduled",
-        "timestamp": "2026-06-04T14:11:01.571421Z"
-      }
-    ],
-    "scheduled_events": [
-      {
-        "type": "onsite",
-        "timestamp": "2026-06-09T15:32:38.320777Z"
-      }
-    ],
-    "owner": null,
-    "source": "USACO outreach",
-    "notes": "ICPC regionals finalist, backend at a startup; wants remote-first",
-    "last_updated": "2026-06-04T14:11:01.571421Z"
-  },
-  {
-    "id": "c_013",
-    "name": "Jon Smith",
-    "role": "FDE",
     "stage": "screen_done",
     "stage_history": [
       {
         "stage": "applied",
-        "timestamp": "2026-05-29T07:03:50.222542Z"
+        "timestamp": "2026-05-29T07:53:05.085496Z"
       },
       {
         "stage": "screen_scheduled",
-        "timestamp": "2026-05-31T10:42:52.834297Z"
+        "timestamp": "2026-06-02T21:04:28.897238Z"
       },
       {
         "stage": "screen_done",
-        "timestamp": "2026-06-05T05:08:34.495634Z"
+        "timestamp": "2026-06-06T18:38:41.306144Z"
       }
     ],
     "scheduled_events": [
       {
         "type": "onsite",
-        "timestamp": "2026-06-10T01:02:21.908153Z"
+        "timestamp": "2026-06-11T14:39:45.394335Z"
       }
     ],
-    "owner": "erin",
-    "source": "referral",
-    "notes": "IOI bronze '18, infra eng at a fintech; moving fast, has competing offer",
-    "last_updated": "2026-06-05T05:08:34.495634Z"
+    "owner": "marcus",
+    "source": "USACO outreach",
+    "notes": "Putnam top-200, ex-quant dev; asked about equity split",
+    "last_updated": "2026-06-06T18:38:41.306144Z"
   },
   {
-    "id": "c_014",
-    "name": "Jonathan Smith",
-    "role": "Growth Strategy Lead",
-    "stage": "applied",
+    "id": "c_003",
+    "name": "Clara Hussain",
+    "role": "Growth Strategist",
+    "stage": "screen_scheduled",
     "stage_history": [
       {
         "stage": "applied",
-        "timestamp": "2026-06-06T17:35:08.337440Z"
+        "timestamp": "2026-05-30T03:05:56.716774Z"
+      },
+      {
+        "stage": "screen_scheduled",
+        "timestamp": "2026-06-04T03:43:24.532910Z"
+      }
+    ],
+    "scheduled_events": [
+      {
+        "type": "screen",
+        "timestamp": "2026-06-10T09:55:20.149715Z"
+      }
+    ],
+    "owner": "erin",
+    "source": "conference booth",
+    "notes": "Putnam top-200, ex-quant dev; great take-home",
+    "last_updated": "2026-06-04T03:43:24.532910Z"
+  },
+  {
+    "id": "c_004",
+    "name": "Arjun Osei",
+    "role": "Growth Strategist",
+    "stage": "screen_done",
+    "stage_history": [
+      {
+        "stage": "applied",
+        "timestamp": "2026-05-30T14:29:38.833955Z"
+      },
+      {
+        "stage": "screen_scheduled",
+        "timestamp": "2026-06-04T03:02:35.872678Z"
+      },
+      {
+        "stage": "screen_done",
+        "timestamp": "2026-06-06T19:36:33.986486Z"
+      }
+    ],
+    "scheduled_events": [],
+    "owner": "atlas",
+    "source": "LinkedIn",
+    "notes": "Kaggle GM, data eng at a scale-up; wants remote-first",
+    "last_updated": "2026-06-06T19:36:33.986486Z"
+  },
+  {
+    "id": "c_005",
+    "name": "Felix Iyer",
+    "role": "Growth Strategy Lead",
+    "stage": "onsite_done",
+    "stage_history": [
+      {
+        "stage": "applied",
+        "timestamp": "2026-05-22T15:10:02.965304Z"
+      },
+      {
+        "stage": "screen_scheduled",
+        "timestamp": "2026-05-26T11:40:39.056366Z"
+      },
+      {
+        "stage": "screen_done",
+        "timestamp": "2026-05-29T23:20:35.601656Z"
+      },
+      {
+        "stage": "onsite_scheduled",
+        "timestamp": "2026-06-01T18:52:18.440197Z"
+      },
+      {
+        "stage": "onsite_done",
+        "timestamp": "2026-06-06T11:44:05.635322Z"
       }
     ],
     "scheduled_events": [],
     "owner": "marcus",
     "source": "Codeforces top list",
     "notes": "IOI bronze '18, infra eng at a fintech; wants remote-first",
-    "last_updated": "2026-06-06T17:35:08.337440Z"
+    "last_updated": "2026-06-06T11:44:05.635322Z"
   },
   {
-    "id": "c_015",
-    "name": "Owen Larsen",
+    "id": "c_006",
+    "name": "Jorge Larsen",
+    "role": "Growth Strategy Lead",
+    "stage": "applied",
+    "stage_history": [
+      {
+        "stage": "applied",
+        "timestamp": "2026-05-22T19:28:19.576842Z"
+      }
+    ],
+    "scheduled_events": [],
+    "owner": "marcus",
+    "source": "HN Who's Hiring",
+    "notes": "USACO Gold '19, now at a Series B; asked about equity split",
+    "last_updated": "2026-05-22T19:28:19.576842Z"
+  },
+  {
+    "id": "c_007",
+    "name": "Oscar Sharma",
     "role": "Customer Success Lead",
     "stage": "screen_scheduled",
     "stage_history": [
       {
         "stage": "applied",
-        "timestamp": "2026-06-02T18:31:46.135262Z"
+        "timestamp": "2026-05-23T13:49:53.855095Z"
       },
       {
         "stage": "screen_scheduled",
-        "timestamp": "2026-06-05T11:40:45.099280Z"
+        "timestamp": "2026-05-27T23:31:47.286292Z"
       }
     ],
-    "scheduled_events": [
-      {
-        "type": "screen",
-        "timestamp": "2026-06-10T08:16:18.854982Z"
-      }
-    ],
+    "scheduled_events": [],
     "owner": "erin",
     "source": "Codeforces top list",
-    "notes": "USACO Gold '19, now at a Series B; strong systems background",
-    "last_updated": "2026-06-05T11:40:45.099280Z"
+    "notes": "USACO Gold '19, now at a Series B; asked about equity split",
+    "last_updated": "2026-05-27T23:31:47.286292Z"
   },
   {
-    "id": "c_016",
-    "name": "Zainab Brandt",
+    "id": "c_008",
+    "name": "Elias Bianchi",
     "role": "Growth Strategist",
-    "stage": "applied",
+    "stage": "onsite_done",
     "stage_history": [
       {
         "stage": "applied",
-        "timestamp": "2026-06-05T11:33:58.813269Z"
+        "timestamp": "2026-05-17T20:27:51.687316Z"
+      },
+      {
+        "stage": "screen_scheduled",
+        "timestamp": "2026-05-21T18:21:45.600201Z"
+      },
+      {
+        "stage": "screen_done",
+        "timestamp": "2026-05-26T07:41:23.541346Z"
+      },
+      {
+        "stage": "onsite_scheduled",
+        "timestamp": "2026-05-31T01:50:30.255449Z"
+      },
+      {
+        "stage": "onsite_done",
+        "timestamp": "2026-06-02T15:04:29.245301Z"
       }
     ],
     "scheduled_events": [],
     "owner": "dana",
-    "source": "IOI alumni list",
-    "notes": "USACO Gold '19, now at a Series B; strong systems background",
-    "last_updated": "2026-06-05T11:33:58.813269Z"
+    "source": "referral",
+    "notes": "Codeforces master, ML platform work; wants remote-first",
+    "last_updated": "2026-06-02T15:04:29.245301Z"
   },
   {
-    "id": "c_017",
-    "name": "Tomas Larsen",
-    "role": "Growth Strategist",
-    "stage": "screen_scheduled",
+    "id": "c_009",
+    "name": "Freya Chen",
+    "role": "Growth Strategy Lead",
+    "stage": "onsite_done",
     "stage_history": [
       {
         "stage": "applied",
-        "timestamp": "2026-06-02T20:01:10.923339Z"
+        "timestamp": "2026-05-17T07:16:15.853800Z"
       },
       {
         "stage": "screen_scheduled",
-        "timestamp": "2026-06-05T05:56:11.144797Z"
-      }
-    ],
-    "scheduled_events": [
+        "timestamp": "2026-05-22T08:45:18.094822Z"
+      },
       {
-        "type": "screen",
-        "timestamp": "2026-06-11T05:38:07.325899Z"
+        "stage": "screen_done",
+        "timestamp": "2026-05-25T16:26:03.772582Z"
+      },
+      {
+        "stage": "onsite_scheduled",
+        "timestamp": "2026-05-30T16:44:36.532519Z"
+      },
+      {
+        "stage": "onsite_done",
+        "timestamp": "2026-06-03T03:32:18.520181Z"
       }
     ],
-    "owner": "erin",
-    "source": "referral",
-    "notes": "IOI bronze '18, infra eng at a fintech; HM very positive",
-    "last_updated": "2026-06-05T05:56:11.144797Z"
+    "scheduled_events": [],
+    "owner": "dana",
+    "source": "USACO outreach",
+    "notes": "Codeforces master, ML platform work; moving fast, has competing offer",
+    "last_updated": "2026-06-03T03:32:18.520181Z"
   },
   {
-    "id": "c_018",
-    "name": "Camila Eze",
+    "id": "c_010",
+    "name": "Tomas Hoffman",
     "role": "Growth Strategy Lead",
     "stage": "screen_done",
     "stage_history": [
       {
         "stage": "applied",
-        "timestamp": "2026-06-01T00:06:22.353343Z"
+        "timestamp": "2026-05-31T00:51:56.377737Z"
       },
       {
         "stage": "screen_scheduled",
-        "timestamp": "2026-06-03T08:47:34.870408Z"
+        "timestamp": "2026-06-02T17:55:22.614299Z"
       },
       {
         "stage": "screen_done",
-        "timestamp": "2026-06-06T07:15:44.260636Z"
-      }
-    ],
-    "scheduled_events": [],
-    "owner": "dana",
-    "source": "conference booth",
-    "notes": "Kaggle GM, data eng at a scale-up; great take-home",
-    "last_updated": "2026-06-06T07:15:44.260636Z"
-  },
-  {
-    "id": "c_019",
-    "name": "Iris Amini",
-    "role": "Growth Strategy Lead",
-    "stage": "applied",
-    "stage_history": [
-      {
-        "stage": "applied",
-        "timestamp": "2026-06-05T21:29:54.303839Z"
-      }
-    ],
-    "scheduled_events": [],
-    "owner": "atlas",
-    "source": "LinkedIn",
-    "notes": "Codeforces master, ML platform work; moving fast, has competing offer",
-    "last_updated": "2026-06-05T21:29:54.303839Z"
-  },
-  {
-    "id": "c_020",
-    "name": "Clara Iyer",
-    "role": "FDE",
-    "stage": "onsite_done",
-    "stage_history": [
-      {
-        "stage": "applied",
-        "timestamp": "2026-05-22T06:20:02.217899Z"
-      },
-      {
-        "stage": "screen_scheduled",
-        "timestamp": "2026-05-25T03:03:53.783836Z"
-      },
-      {
-        "stage": "screen_done",
-        "timestamp": "2026-05-27T11:48:12.257983Z"
-      },
-      {
-        "stage": "onsite_scheduled",
-        "timestamp": "2026-06-01T09:17:23.883932Z"
-      },
-      {
-        "stage": "onsite_done",
-        "timestamp": "2026-06-05T22:16:39.543496Z"
+        "timestamp": "2026-06-06T20:56:56.721132Z"
       }
     ],
     "scheduled_events": [
       {
-        "type": "debrief",
-        "timestamp": "2026-06-09T13:01:56.152159Z"
+        "type": "onsite",
+        "timestamp": "2026-06-12T07:59:49.568075Z"
       }
     ],
-    "owner": "erin",
-    "source": "referral",
-    "notes": "USACO Platinum '21, new grad; asked about equity split",
-    "last_updated": "2026-06-05T22:16:39.543496Z"
-  },
-  {
-    "id": "c_021",
-    "name": "Clara Dubois",
-    "role": "Growth Strategy Lead",
-    "stage": "applied",
-    "stage_history": [
-      {
-        "stage": "applied",
-        "timestamp": "2026-06-07T04:13:50.885024Z"
-      }
-    ],
-    "scheduled_events": [],
-    "owner": "atlas",
-    "source": "USACO outreach",
+    "owner": null,
+    "source": "HN Who's Hiring",
     "notes": "USACO Platinum '21, new grad; HM very positive",
-    "last_updated": "2026-06-07T04:13:50.885024Z"
+    "last_updated": "2026-06-06T20:56:56.721132Z"
   },
   {
-    "id": "c_022",
-    "name": "Kofi Keller",
-    "role": "Growth Strategy Lead",
+    "id": "c_011",
+    "name": "Jon Smith",
+    "role": "Customer Success Lead",
     "stage": "offer",
     "stage_history": [
       {
         "stage": "applied",
-        "timestamp": "2026-05-13T22:18:10.109556Z"
+        "timestamp": "2026-05-20T22:35:38.120005Z"
       },
       {
         "stage": "screen_scheduled",
-        "timestamp": "2026-05-17T03:51:02.941301Z"
+        "timestamp": "2026-05-26T04:09:05.553715Z"
       },
       {
         "stage": "screen_done",
-        "timestamp": "2026-05-22T00:14:06.345613Z"
+        "timestamp": "2026-05-28T17:23:16.931685Z"
       },
       {
         "stage": "onsite_scheduled",
-        "timestamp": "2026-05-25T05:49:39.756484Z"
+        "timestamp": "2026-05-30T22:18:13.619400Z"
       },
       {
         "stage": "onsite_done",
-        "timestamp": "2026-05-30T04:03:47.998534Z"
+        "timestamp": "2026-06-04T05:49:54.162252Z"
       },
       {
         "stage": "offer",
-        "timestamp": "2026-06-04T00:29:23.672176Z"
+        "timestamp": "2026-06-06T09:35:42.526557Z"
       }
     ],
     "scheduled_events": [
       {
         "type": "offer_call",
-        "timestamp": "2026-06-10T01:09:45.207018Z"
+        "timestamp": "2026-06-11T03:15:42.795982Z"
       }
     ],
     "owner": "atlas",
-    "source": "conference booth",
-    "notes": "Putnam top-200, ex-quant dev; wants remote-first",
-    "last_updated": "2026-06-04T00:29:23.672176Z"
+    "source": "LinkedIn",
+    "notes": "USACO Platinum '21, new grad; wants remote-first",
+    "last_updated": "2026-06-06T09:35:42.526557Z"
   },
   {
-    "id": "c_023",
-    "name": "Lena Iyer",
+    "id": "c_012",
+    "name": "Jonathan Smith",
     "role": "FDE",
     "stage": "onsite_scheduled",
     "stage_history": [
       {
         "stage": "applied",
-        "timestamp": "2026-05-27T08:34:55.957299Z"
+        "timestamp": "2026-05-28T09:40:54.216449Z"
       },
       {
         "stage": "screen_scheduled",
-        "timestamp": "2026-05-30T21:41:08.503372Z"
+        "timestamp": "2026-05-31T16:26:28.954241Z"
       },
       {
         "stage": "screen_done",
-        "timestamp": "2026-06-02T20:07:32.505617Z"
+        "timestamp": "2026-06-03T06:36:58.645787Z"
       },
       {
         "stage": "onsite_scheduled",
-        "timestamp": "2026-06-07T13:51:24.575074Z"
+        "timestamp": "2026-06-06T02:58:04.421712Z"
       }
     ],
     "scheduled_events": [
       {
         "type": "onsite",
-        "timestamp": "2026-06-09T11:10:25.840258Z"
+        "timestamp": "2026-06-09T20:32:26.468848Z"
       }
     ],
-    "owner": "dana",
+    "owner": "atlas",
     "source": "LinkedIn",
-    "notes": "USACO Gold '19, now at a Series B; moving fast, has competing offer",
-    "last_updated": "2026-06-07T13:51:24.575074Z"
+    "notes": "Codeforces master, ML platform work; asked about equity split",
+    "last_updated": "2026-06-06T02:58:04.421712Z"
   },
   {
-    "id": "c_024",
-    "name": "Nadia Volkov",
-    "role": "Growth Strategist",
-    "stage": "onsite_done",
-    "stage_history": [
-      {
-        "stage": "applied",
-        "timestamp": "2026-05-23T06:45:17.438295Z"
-      },
-      {
-        "stage": "screen_scheduled",
-        "timestamp": "2026-05-28T03:20:31.194717Z"
-      },
-      {
-        "stage": "screen_done",
-        "timestamp": "2026-05-31T16:21:54.601684Z"
-      },
-      {
-        "stage": "onsite_scheduled",
-        "timestamp": "2026-06-04T04:21:47.419997Z"
-      },
-      {
-        "stage": "onsite_done",
-        "timestamp": "2026-06-07T06:06:27.467152Z"
-      }
-    ],
-    "scheduled_events": [],
-    "owner": "erin",
-    "source": "USACO outreach",
-    "notes": "IOI bronze '18, infra eng at a fintech; needs visa transfer",
-    "last_updated": "2026-06-07T06:06:27.467152Z"
-  },
-  {
-    "id": "c_025",
-    "name": "Ifeoma Chen",
-    "role": "Growth Strategist",
-    "stage": "onsite_done",
-    "stage_history": [
-      {
-        "stage": "applied",
-        "timestamp": "2026-05-21T13:04:06.644213Z"
-      },
-      {
-        "stage": "screen_scheduled",
-        "timestamp": "2026-05-26T08:36:04.068296Z"
-      },
-      {
-        "stage": "screen_done",
-        "timestamp": "2026-05-30T23:06:56.735688Z"
-      },
-      {
-        "stage": "onsite_scheduled",
-        "timestamp": "2026-06-04T03:26:22.340723Z"
-      },
-      {
-        "stage": "onsite_done",
-        "timestamp": "2026-06-07T03:16:48.143042Z"
-      }
-    ],
-    "scheduled_events": [],
-    "owner": "dana",
-    "source": "conference booth",
-    "notes": "USACO Gold '19, now at a Series B; moving fast, has competing offer",
-    "last_updated": "2026-06-07T03:16:48.143042Z"
-  },
-  {
-    "id": "c_026",
-    "name": "Lucas Keller",
+    "id": "c_013",
+    "name": "Zainab Wagner",
     "role": "Customer Success Lead",
-    "stage": "onsite_done",
-    "stage_history": [
-      {
-        "stage": "applied",
-        "timestamp": "2026-05-24T01:19:06.281757Z"
-      },
-      {
-        "stage": "screen_scheduled",
-        "timestamp": "2026-05-28T02:09:34.249378Z"
-      },
-      {
-        "stage": "screen_done",
-        "timestamp": "2026-06-01T02:59:32.874014Z"
-      },
-      {
-        "stage": "onsite_scheduled",
-        "timestamp": "2026-06-03T12:06:28.154965Z"
-      },
-      {
-        "stage": "onsite_done",
-        "timestamp": "2026-06-06T11:57:38.141653Z"
-      }
-    ],
-    "scheduled_events": [],
-    "owner": "erin",
-    "source": "conference booth",
-    "notes": "Kaggle GM, data eng at a scale-up; needs visa transfer",
-    "last_updated": "2026-06-06T11:57:38.141653Z"
-  },
-  {
-    "id": "c_027",
-    "name": "Clara Gupta",
-    "role": "FDE",
-    "stage": "screen_scheduled",
-    "stage_history": [
-      {
-        "stage": "applied",
-        "timestamp": "2026-05-31T20:27:13.899858Z"
-      },
-      {
-        "stage": "screen_scheduled",
-        "timestamp": "2026-06-04T02:55:32.208777Z"
-      }
-    ],
-    "scheduled_events": [
-      {
-        "type": "screen",
-        "timestamp": "2026-06-10T05:14:32.627415Z"
-      }
-    ],
-    "owner": "dana",
-    "source": "IOI alumni list",
-    "notes": "USACO Platinum '21, new grad; wants remote-first",
-    "last_updated": "2026-06-04T02:55:32.208777Z"
-  },
-  {
-    "id": "c_028",
-    "name": "Noor Gupta",
-    "role": "Growth Strategy Lead",
     "stage": "applied",
     "stage_history": [
       {
         "stage": "applied",
-        "timestamp": "2026-06-03T08:31:46.319737Z"
+        "timestamp": "2026-06-05T04:38:01.709402Z"
       }
     ],
     "scheduled_events": [],
     "owner": "atlas",
     "source": "HN Who's Hiring",
-    "notes": "Kaggle GM, data eng at a scale-up; asked about equity split",
-    "last_updated": "2026-06-03T08:31:46.319737Z"
+    "notes": "IOI bronze '18, infra eng at a fintech; great take-home",
+    "last_updated": "2026-06-05T04:38:01.709402Z"
   },
   {
-    "id": "c_029",
-    "name": "Mateo Diallo",
-    "role": "FDE",
-    "stage": "screen_scheduled",
-    "stage_history": [
-      {
-        "stage": "applied",
-        "timestamp": "2026-06-01T16:06:23.033156Z"
-      },
-      {
-        "stage": "screen_scheduled",
-        "timestamp": "2026-06-04T19:01:17.765767Z"
-      }
-    ],
-    "scheduled_events": [
-      {
-        "type": "screen",
-        "timestamp": "2026-06-09T13:52:18.263047Z"
-      }
-    ],
-    "owner": "erin",
-    "source": "conference booth",
-    "notes": "USACO Platinum '21, new grad; asked about equity split",
-    "last_updated": "2026-06-04T19:01:17.765767Z"
-  },
-  {
-    "id": "c_030",
-    "name": "Stefan Nilsen",
+    "id": "c_014",
+    "name": "Diego Lin",
     "role": "Growth Strategy Lead",
     "stage": "onsite_scheduled",
     "stage_history": [
       {
         "stage": "applied",
-        "timestamp": "2026-05-30T16:56:29.801502Z"
+        "timestamp": "2026-05-24T05:54:44.938686Z"
       },
       {
         "stage": "screen_scheduled",
-        "timestamp": "2026-06-02T08:26:46.226882Z"
+        "timestamp": "2026-05-29T07:11:00.096194Z"
       },
       {
         "stage": "screen_done",
-        "timestamp": "2026-06-05T03:54:22.954602Z"
+        "timestamp": "2026-06-01T16:19:20.066282Z"
       },
       {
         "stage": "onsite_scheduled",
-        "timestamp": "2026-06-07T16:38:09.793006Z"
+        "timestamp": "2026-06-04T16:32:57.335486Z"
       }
     ],
     "scheduled_events": [
       {
         "type": "onsite",
-        "timestamp": "2026-06-12T04:47:35.925072Z"
+        "timestamp": "2026-06-11T12:47:00.172516Z"
+      }
+    ],
+    "owner": "erin",
+    "source": "IOI alumni list",
+    "notes": "ICPC regionals finalist, backend at a startup; strong systems background",
+    "last_updated": "2026-06-04T16:32:57.335486Z"
+  },
+  {
+    "id": "c_015",
+    "name": "Amara Qureshi",
+    "role": "FDE",
+    "stage": "onsite_done",
+    "stage_history": [
+      {
+        "stage": "applied",
+        "timestamp": "2026-05-18T03:39:15.663285Z"
+      },
+      {
+        "stage": "screen_scheduled",
+        "timestamp": "2026-05-21T21:22:32.593850Z"
+      },
+      {
+        "stage": "screen_done",
+        "timestamp": "2026-05-26T22:33:28.400972Z"
+      },
+      {
+        "stage": "onsite_scheduled",
+        "timestamp": "2026-05-31T04:40:07.852072Z"
+      },
+      {
+        "stage": "onsite_done",
+        "timestamp": "2026-06-04T15:32:04.183497Z"
+      }
+    ],
+    "scheduled_events": [
+      {
+        "type": "debrief",
+        "timestamp": "2026-06-11T09:09:10.691012Z"
       }
     ],
     "owner": "marcus",
-    "source": "IOI alumni list",
-    "notes": "ICPC regionals finalist, backend at a startup; moving fast, has competing offer",
-    "last_updated": "2026-06-07T16:38:09.793006Z"
+    "source": "conference booth",
+    "notes": "ICPC regionals finalist, backend at a startup; asked about equity split",
+    "last_updated": "2026-06-04T15:32:04.183497Z"
+  },
+  {
+    "id": "c_016",
+    "name": "Rosa Gupta",
+    "role": "FDE",
+    "stage": "screen_done",
+    "stage_history": [
+      {
+        "stage": "applied",
+        "timestamp": "2026-05-31T10:18:54.748534Z"
+      },
+      {
+        "stage": "screen_scheduled",
+        "timestamp": "2026-06-05T01:20:29.437332Z"
+      },
+      {
+        "stage": "screen_done",
+        "timestamp": "2026-06-07T07:42:12.659698Z"
+      }
+    ],
+    "scheduled_events": [
+      {
+        "type": "onsite",
+        "timestamp": "2026-06-10T21:50:32.127939Z"
+      }
+    ],
+    "owner": "dana",
+    "source": "referral",
+    "notes": "ICPC regionals finalist, backend at a startup; needs visa transfer",
+    "last_updated": "2026-06-07T07:42:12.659698Z"
+  },
+  {
+    "id": "c_017",
+    "name": "Iris Lin",
+    "role": "Growth Strategist",
+    "stage": "screen_scheduled",
+    "stage_history": [
+      {
+        "stage": "applied",
+        "timestamp": "2026-05-31T22:08:57.470264Z"
+      },
+      {
+        "stage": "screen_scheduled",
+        "timestamp": "2026-06-05T10:21:12.670215Z"
+      }
+    ],
+    "scheduled_events": [
+      {
+        "type": "screen",
+        "timestamp": "2026-06-11T04:12:20.582647Z"
+      }
+    ],
+    "owner": "marcus",
+    "source": "LinkedIn",
+    "notes": "Kaggle GM, data eng at a scale-up; strong systems background",
+    "last_updated": "2026-06-05T10:21:12.670215Z"
+  },
+  {
+    "id": "c_018",
+    "name": "Rosa Brandt",
+    "role": "FDE",
+    "stage": "offer",
+    "stage_history": [
+      {
+        "stage": "applied",
+        "timestamp": "2026-05-16T07:28:16.590071Z"
+      },
+      {
+        "stage": "screen_scheduled",
+        "timestamp": "2026-05-19T04:52:27.717635Z"
+      },
+      {
+        "stage": "screen_done",
+        "timestamp": "2026-05-23T07:35:35.433387Z"
+      },
+      {
+        "stage": "onsite_scheduled",
+        "timestamp": "2026-05-26T12:26:30.905752Z"
+      },
+      {
+        "stage": "onsite_done",
+        "timestamp": "2026-05-31T02:32:33.317664Z"
+      },
+      {
+        "stage": "offer",
+        "timestamp": "2026-06-04T22:56:52.766982Z"
+      }
+    ],
+    "scheduled_events": [
+      {
+        "type": "offer_call",
+        "timestamp": "2026-06-09T19:04:03.789063Z"
+      }
+    ],
+    "owner": "dana",
+    "source": "HN Who's Hiring",
+    "notes": "USACO Platinum '21, new grad; strong systems background",
+    "last_updated": "2026-06-04T22:56:52.766982Z"
+  },
+  {
+    "id": "c_019",
+    "name": "Hassan Volkov",
+    "role": "Growth Strategist",
+    "stage": "onsite_done",
+    "stage_history": [
+      {
+        "stage": "applied",
+        "timestamp": "2026-05-23T14:20:56.774510Z"
+      },
+      {
+        "stage": "screen_scheduled",
+        "timestamp": "2026-05-26T22:41:46.355672Z"
+      },
+      {
+        "stage": "screen_done",
+        "timestamp": "2026-05-29T14:22:35.355242Z"
+      },
+      {
+        "stage": "onsite_scheduled",
+        "timestamp": "2026-06-03T06:33:11.353378Z"
+      },
+      {
+        "stage": "onsite_done",
+        "timestamp": "2026-06-06T12:28:16.467804Z"
+      }
+    ],
+    "scheduled_events": [],
+    "owner": "erin",
+    "source": "referral",
+    "notes": "USACO Gold '19, now at a Series B; needs visa transfer",
+    "last_updated": "2026-06-06T12:28:16.467804Z"
+  },
+  {
+    "id": "c_020",
+    "name": "Owen Hoffman",
+    "role": "FDE",
+    "stage": "screen_done",
+    "stage_history": [
+      {
+        "stage": "applied",
+        "timestamp": "2026-05-28T15:12:42.495345Z"
+      },
+      {
+        "stage": "screen_scheduled",
+        "timestamp": "2026-06-02T08:13:24.977316Z"
+      },
+      {
+        "stage": "screen_done",
+        "timestamp": "2026-06-06T11:07:04.044226Z"
+      }
+    ],
+    "scheduled_events": [],
+    "owner": "marcus",
+    "source": "HN Who's Hiring",
+    "notes": "USACO Platinum '21, new grad; great take-home",
+    "last_updated": "2026-06-06T11:07:04.044226Z"
+  },
+  {
+    "id": "c_021",
+    "name": "Mateo Gupta",
+    "role": "FDE",
+    "stage": "offer",
+    "stage_history": [
+      {
+        "stage": "applied",
+        "timestamp": "2026-05-19T01:23:12.220911Z"
+      },
+      {
+        "stage": "screen_scheduled",
+        "timestamp": "2026-05-21T12:46:18.099918Z"
+      },
+      {
+        "stage": "screen_done",
+        "timestamp": "2026-05-25T18:25:33.351429Z"
+      },
+      {
+        "stage": "onsite_scheduled",
+        "timestamp": "2026-05-29T06:12:54.927139Z"
+      },
+      {
+        "stage": "onsite_done",
+        "timestamp": "2026-06-02T22:03:09.860238Z"
+      },
+      {
+        "stage": "offer",
+        "timestamp": "2026-06-07T03:24:19.967439Z"
+      }
+    ],
+    "scheduled_events": [
+      {
+        "type": "offer_call",
+        "timestamp": "2026-06-11T19:26:07.976387Z"
+      }
+    ],
+    "owner": "dana",
+    "source": "HN Who's Hiring",
+    "notes": "ICPC regionals finalist, backend at a startup; HM very positive",
+    "last_updated": "2026-06-07T03:24:19.967439Z"
+  },
+  {
+    "id": "c_022",
+    "name": "Mateo Qureshi",
+    "role": "Customer Success Lead",
+    "stage": "onsite_scheduled",
+    "stage_history": [
+      {
+        "stage": "applied",
+        "timestamp": "2026-05-26T12:32:35.615159Z"
+      },
+      {
+        "stage": "screen_scheduled",
+        "timestamp": "2026-05-28T19:38:29.742406Z"
+      },
+      {
+        "stage": "screen_done",
+        "timestamp": "2026-06-01T07:26:47.320538Z"
+      },
+      {
+        "stage": "onsite_scheduled",
+        "timestamp": "2026-06-05T11:26:15.563422Z"
+      }
+    ],
+    "scheduled_events": [
+      {
+        "type": "onsite",
+        "timestamp": "2026-06-12T02:00:29.936857Z"
+      }
+    ],
+    "owner": "erin",
+    "source": "referral",
+    "notes": "Putnam top-200, ex-quant dev; moving fast, has competing offer",
+    "last_updated": "2026-06-05T11:26:15.563422Z"
+  },
+  {
+    "id": "c_023",
+    "name": "Oscar Kowalski",
+    "role": "Growth Strategist",
+    "stage": "offer",
+    "stage_history": [
+      {
+        "stage": "applied",
+        "timestamp": "2026-05-19T01:00:20.874492Z"
+      },
+      {
+        "stage": "screen_scheduled",
+        "timestamp": "2026-05-23T12:36:21.646376Z"
+      },
+      {
+        "stage": "screen_done",
+        "timestamp": "2026-05-26T07:57:02.166574Z"
+      },
+      {
+        "stage": "onsite_scheduled",
+        "timestamp": "2026-05-29T16:18:22.925370Z"
+      },
+      {
+        "stage": "onsite_done",
+        "timestamp": "2026-06-01T21:36:58.033908Z"
+      },
+      {
+        "stage": "offer",
+        "timestamp": "2026-06-07T00:20:18.119061Z"
+      }
+    ],
+    "scheduled_events": [
+      {
+        "type": "offer_call",
+        "timestamp": "2026-06-11T13:57:25.074545Z"
+      }
+    ],
+    "owner": "marcus",
+    "source": "USACO outreach",
+    "notes": "USACO Gold '19, now at a Series B; asked about equity split",
+    "last_updated": "2026-06-07T00:20:18.119061Z"
   }
 ]

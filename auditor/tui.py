@@ -101,6 +101,11 @@ def do_check(state: TuiState, console: Console) -> None:
     console.print(Panel(table, title=f"{len(found)} discrepancies -> queue",
                         title_align="left", box=PANEL_BOX,
                         border_style=GREY_LINE))
+    failed = next((i.triage.explanation for i in items
+                   if "(LLM unavailable" in i.triage.explanation), None)
+    if failed:
+        console.print(f"[{INK_RED}]LLM triage failed; batch finished "
+                      f"offline. First error:[/] {failed.split(')')[0]})")
 
 
 def diff_table(d: Discrepancy, pipeline: CanonicalPipeline) -> Table:

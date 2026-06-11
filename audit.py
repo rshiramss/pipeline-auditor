@@ -19,8 +19,10 @@ from auditor.config import load_dotenv, load_rules
 from auditor.models import SEVERITY_COLORS
 from auditor.theme import GREY_LINE, PANEL_BOX, make_console
 
-load_dotenv()
 console = make_console()
+for overridden_key in load_dotenv():
+    console.print(f"[#e8a33d]note:[/] using {overridden_key} from .env "
+                  f"(overrides a different shell export)")
 
 
 def cmd_run(args: argparse.Namespace) -> None:
@@ -52,6 +54,11 @@ def cmd_run(args: argparse.Namespace) -> None:
     console.print(Panel(table, title=f"{len(discrepancies)} discrepancies",
                         title_align="left", box=PANEL_BOX,
                         border_style=GREY_LINE))
+    failed = next((i.triage.explanation for i in items
+                   if "(LLM unavailable" in i.triage.explanation), None)
+    if failed:
+        console.print(f"[#e5484d]LLM triage failed; batch finished offline. "
+                      f"First error:[/] {failed.split(')')[0]})")
     console.print(f"queue written to {args.out}/queue.json -- "
                   f"next: [bold]python audit.py review[/]")
 

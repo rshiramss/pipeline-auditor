@@ -1,45 +1,43 @@
 {
-  "n": 30,
-  "seed": 30,
+  "n": 23,
+  "seed": 23,
   "as_of": "2026-06-08T09:00:00Z",
-  "healthy_count": 16,
+  "healthy_count": 11,
   "planted": {
     "stage_mismatch": [
       "c_001",
       "c_002",
-      "c_003",
-      "c_004"
+      "c_003"
     ],
     "ghost_in_ats": [
-      "c_005",
-      "c_006"
+      "c_004",
+      "c_005"
     ],
     "ghost_in_tracking": [
-      "Aisha Osei",
-      "Aisha Tanaka"
+      "Anika Gupta",
+      "Pavel Volkov"
     ],
     "stale": [
-      "c_007",
+      "c_006",
+      "c_007"
+    ],
+    "scheduling_limbo": [
       "c_008",
       "c_009"
     ],
-    "scheduling_limbo": [
-      "c_010",
-      "c_011"
-    ],
     "owner_gap": [
-      "c_012"
+      "c_010"
     ],
     "duplicate_suspect": [
       [
-        "c_013",
-        "c_014"
+        "c_011",
+        "c_012"
       ]
     ]
   },
   "fuzzy_resolution_case": {
-    "id": "c_016",
-    "ats_name": "Zainab Brandt",
-    "logged_as": "Zain Brandt"
+    "id": "c_013",
+    "ats_name": "Zainab Wagner",
+    "logged_as": "Zain Wagner"
   }
 }
