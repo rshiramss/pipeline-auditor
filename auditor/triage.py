@@ -160,7 +160,12 @@ def build_model(rules: Rules):
 def triage_all(discrepancies: list[Discrepancy], pipeline: CanonicalPipeline,
                rules: Rules, use_llm: bool = True,
                model=None, on_progress=None) -> list[TriageResult]:
-    """Triage every discrepancy; falls back to offline mode without a key."""
+    """Triage every discrepancy; falls back to offline mode without a key.
+
+    An API failure (bad key, network, provider outage) downgrades the rest of
+    the batch to offline triage instead of crashing the run -- the queue must
+    always get filled.
+    """
     if use_llm and model is None:
         model = build_model(rules)
     results = []
@@ -168,7 +173,15 @@ def triage_all(discrepancies: list[Discrepancy], pipeline: CanonicalPipeline,
         if on_progress:
             on_progress(d)
         if use_llm and model is not None:
-            results.append(triage_discrepancy(d, pipeline, model, rules))
-        else:
-            results.append(offline_triage(d, rules))
+            try:
+                results.append(triage_discrepancy(d, pipeline, model, rules))
+                continue
+            except Exception as error:  # noqa: BLE001 -- provider errors vary
+                model = None  # remaining items skip the dead API
+                fallback = offline_triage(d, rules)
+                results.append(fallback.model_copy(update={
+                    "explanation": f"(LLM unavailable: {error}) "
+                                   + fallback.explanation}))
+                continue
+        results.append(offline_triage(d, rules))
     return results

@@ -1,6 +1,6 @@
 {
   "n": 30,
-  "seed": 23,
+  "seed": 30,
   "as_of": "2026-06-08T09:00:00Z",
   "healthy_count": 16,
   "planted": {
@@ -15,8 +15,8 @@
       "c_006"
     ],
     "ghost_in_tracking": [
-      "Sana Diallo",
-      "Tomas Moreno"
+      "Aisha Osei",
+      "Aisha Tanaka"
     ],
     "stale": [
       "c_007",
@@ -38,8 +38,8 @@
     ]
   },
   "fuzzy_resolution_case": {
-    "id": "c_019",
-    "ats_name": "Hassan Volkov",
-    "logged_as": "Hass Volkov"
+    "id": "c_016",
+    "ats_name": "Zainab Brandt",
+    "logged_as": "Zain Brandt"
   }
 }

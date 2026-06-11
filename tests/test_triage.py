@@ -149,6 +149,27 @@ class TestBudget:
         assert budget.used == 1
 
 
+class TestApiFailureFallback:
+    def test_api_error_downgrades_batch_to_offline_instead_of_crashing(self):
+        class DeadModel:
+            def bind_tools(self, tools, **kwargs):
+                return self
+
+            def invoke(self, *args, **kwargs):
+                raise RuntimeError("401 invalid_api_key")
+
+        from auditor.triage import triage_all
+
+        discrepancies = [make_discrepancy(), make_discrepancy()]
+        results = triage_all(discrepancies, make_pipeline(), RULES,
+                             use_llm=True, model=DeadModel())
+        assert len(results) == 2
+        assert "LLM unavailable" in results[0].explanation
+        # second item never touches the dead API: plain offline triage
+        assert results[1].explanation.startswith("(offline triage)")
+        assert all(r.severity == Severity.ATTENTION for r in results)
+
+
 class TestOfflineTriage:
     def test_severity_comes_from_rules(self):
         rules = Rules(severity_weights={DiscrepancyType.STAGE_MISMATCH: Severity.URGENT})
