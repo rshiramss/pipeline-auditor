@@ -7,7 +7,7 @@ no mouse, no live widgets, by design).
 
 from __future__ import annotations
 
-import json
+import os
 from pathlib import Path
 
 from rich.console import Console, Group
@@ -79,7 +79,6 @@ def do_check(state: TuiState, console: Console) -> None:
     if not Path(state.data_dir, "ashby_export.json").exists():
         console.print("[yellow]no data yet -- generate first[/]")
         return
-    import os
     use_llm = bool(os.environ.get("OPENAI_API_KEY"))
     if not use_llm:
         console.print("[dim]OPENAI_API_KEY not set: offline triage[/]")
@@ -210,6 +209,20 @@ def do_report(state: TuiState, console: Console) -> None:
     console.print(Panel(Text(digest_path.read_text(), style="grey74"),
                         title="digest preview", title_align="left",
                         box=PANEL_BOX, border_style=GREY_LINE))
+
+    # Push the same report to Notion when credentials are configured.
+    # Output-only as ever; a Notion failure never takes the session down.
+    if os.environ.get("NOTION_TOKEN") and os.environ.get("NOTION_DATABASE_ID"):
+        from auditor.notion_push import push_report
+        try:
+            with console.status("[bold]pushing to Notion...[/]"):
+                url = push_report(state.pipeline, state.out_dir)
+            console.print(f"[ok]pushed to Notion:[/] {url}")
+        except Exception as error:  # noqa: BLE001 -- network/API errors vary
+            console.print(f"[{INK_RED}]Notion push failed:[/] {error}")
+    else:
+        console.print(Text("NOTION_TOKEN / NOTION_DATABASE_ID not set -- "
+                           "skipped Notion push", style="caption"))
 
 
 def run_tui(rules_path: str = "rules.yaml", data_dir: str = "data",

@@ -1,296 +1,296 @@
 [
   {
-    "candidate_name": "Rosa Brandt",
+    "candidate_name": "Viktor Rossi",
+    "stage_tag": "in_pipeline",
+    "timestamp": "2026-05-18T22:48:08.514268Z",
+    "channel": "#hiring-growth-strategist",
+    "note": "asked about equity split"
+  },
+  {
+    "candidate_name": "Amara Lin",
+    "stage_tag": "in_pipeline",
+    "timestamp": "2026-05-21T08:47:26.500108Z",
+    "channel": "#hiring-customer-success-lead",
+    "note": "wants remote-first"
+  },
+  {
+    "candidate_name": "Priya Nilsen",
+    "stage_tag": "screen_scheduled",
+    "timestamp": "2026-05-23T19:13:20.863062Z",
+    "channel": "#hiring-growth-strategy-lead",
+    "note": "wants remote-first"
+  },
+  {
+    "candidate_name": "Clara Tanaka",
     "stage_tag": "intro_call_booked",
-    "timestamp": "2026-05-19T04:52:27.717635Z",
+    "timestamp": "2026-05-25T00:09:21.064512Z",
     "channel": "#hiring-fde",
     "note": "moving fast, has competing offer"
   },
   {
-    "candidate_name": "Mateo Gupta",
-    "stage_tag": "screen_scheduled",
-    "timestamp": "2026-05-21T12:46:18.099918Z",
-    "channel": "#hiring-fde",
-    "note": "HM very positive"
-  },
-  {
-    "candidate_name": "Oscar Sharma",
+    "candidate_name": "Marek Mendez",
     "stage_tag": "in_pipeline",
-    "timestamp": "2026-05-23T13:49:53.855095Z",
+    "timestamp": "2026-05-26T02:02:29.190290Z",
     "channel": "#hiring-customer-success-lead",
-    "note": "strong systems background"
+    "note": "great take-home"
   },
   {
-    "candidate_name": "Hassan Volkov",
+    "candidate_name": "Tomas Haddad",
     "stage_tag": "applied",
-    "timestamp": "2026-05-23T14:20:56.774510Z",
+    "timestamp": "2026-05-26T03:08:38.491932Z",
     "channel": "#hiring-growth-strategist",
-    "note": "strong systems background"
+    "note": "needs visa transfer"
   },
   {
-    "candidate_name": "Jorge Larsen",
-    "stage_tag": "in_pipeline",
-    "timestamp": "2026-05-24T05:59:19.568027Z",
+    "candidate_name": "Clara Tanaka",
+    "stage_tag": "passed_screen",
+    "timestamp": "2026-05-27T08:37:21.336561Z",
+    "channel": "#hiring-fde",
+    "note": "asked about equity split"
+  },
+  {
+    "candidate_name": "Leila Farouk",
+    "stage_tag": "applied",
+    "timestamp": "2026-05-27T09:23:50.071359Z",
+    "channel": "#hiring-growth-strategist",
+    "note": "moving fast, has competing offer"
+  },
+  {
+    "candidate_name": "Marek Amini",
+    "stage_tag": "applied",
+    "timestamp": "2026-05-28T04:36:35.998699Z",
+    "channel": "#hiring-customer-success-lead",
+    "note": "wants remote-first"
+  },
+  {
+    "candidate_name": "Ingrid Reyes",
+    "stage_tag": "applied",
+    "timestamp": "2026-05-28T08:59:04.390129Z",
     "channel": "#hiring-growth-strategy-lead",
     "note": "HM very positive"
   },
   {
-    "candidate_name": "Jon Smith",
-    "stage_tag": "screen_scheduled",
-    "timestamp": "2026-05-26T04:09:05.553715Z",
-    "channel": "#hiring-customer-success-lead",
+    "candidate_name": "Tomas Haddad",
+    "stage_tag": "intro_call_booked",
+    "timestamp": "2026-05-28T13:46:24.701951Z",
+    "channel": "#hiring-growth-strategist",
+    "note": "asked about equity split"
+  },
+  {
+    "candidate_name": "Dmit Diallo",
+    "stage_tag": "applied",
+    "timestamp": "2026-05-29T11:45:16.801319Z",
+    "channel": "#hiring-growth-strategy-lead",
+    "note": "wants remote-first"
+  },
+  {
+    "candidate_name": "Viktor Rossi",
+    "stage_tag": "onsite_scheduled",
+    "timestamp": "2026-05-29T16:58:12.793991Z",
+    "channel": "#hiring-growth-strategist",
     "note": "HM very positive"
   },
   {
-    "candidate_name": "Rosa Brandt",
-    "stage_tag": "onsite_scheduled",
-    "timestamp": "2026-05-26T12:26:30.905752Z",
-    "channel": "#hiring-fde",
+    "candidate_name": "Jonathan Smith",
+    "stage_tag": "applied",
+    "timestamp": "2026-05-29T20:36:50.590467Z",
+    "channel": "#hiring-growth-strategy-lead",
+    "note": "needs visa transfer"
+  },
+  {
+    "candidate_name": "Arjun Qureshi",
+    "stage_tag": "intro_call_booked",
+    "timestamp": "2026-05-29T23:53:05.358063Z",
+    "channel": "#hiring-growth-strategist",
+    "note": "moving fast, has competing offer"
+  },
+  {
+    "candidate_name": "Pavel Moreno",
+    "stage_tag": "applied",
+    "timestamp": "2026-05-30T14:37:18.955182Z",
+    "channel": "#hiring-growth-strategist",
+    "note": "moving fast, has competing offer"
+  },
+  {
+    "candidate_name": "Freya Eze",
+    "stage_tag": "applied",
+    "timestamp": "2026-05-30T14:38:26.596225Z",
+    "channel": "#hiring-growth-strategist",
+    "note": "great take-home"
+  },
+  {
+    "candidate_name": "Ingrid Reyes",
+    "stage_tag": "screen_scheduled",
+    "timestamp": "2026-06-01T17:58:41.387389Z",
+    "channel": "#hiring-growth-strategy-lead",
+    "note": "great take-home"
+  },
+  {
+    "candidate_name": "Dmit Diallo",
+    "stage_tag": "intro_call_booked",
+    "timestamp": "2026-06-03T03:23:37.094512Z",
+    "channel": "#hiring-growth-strategy-lead",
+    "note": "needs visa transfer"
+  },
+  {
+    "candidate_name": "Yuki Dubois",
+    "stage_tag": "in_pipeline",
+    "timestamp": "2026-06-03T09:11:10.621972Z",
+    "channel": "#hiring-customer-success-lead",
+    "note": "asked about equity split"
+  },
+  {
+    "candidate_name": "Wei Osei",
+    "stage_tag": "finished_onsite",
+    "timestamp": "2026-06-03T14:53:57.334597Z",
+    "channel": "#hiring-growth-strategy-lead",
     "note": "needs visa transfer"
   },
   {
     "candidate_name": "Jonathan Smith",
-    "stage_tag": "in_pipeline",
-    "timestamp": "2026-05-28T09:40:54.216449Z",
-    "channel": "#hiring-fde",
-    "note": "great take-home"
-  },
-  {
-    "candidate_name": "Owen Hoffman",
-    "stage_tag": "applied",
-    "timestamp": "2026-05-28T15:12:42.495345Z",
-    "channel": "#hiring-fde",
+    "stage_tag": "intro_call_booked",
+    "timestamp": "2026-06-03T15:53:36.904875Z",
+    "channel": "#hiring-growth-strategy-lead",
     "note": "needs visa transfer"
   },
   {
-    "candidate_name": "Oscar Sharma",
-    "stage_tag": "screen_scheduled",
-    "timestamp": "2026-05-28T15:13:43.358408Z",
-    "channel": "#hiring-customer-success-lead",
-    "note": "great take-home"
-  },
-  {
-    "candidate_name": "Jon Smith",
-    "stage_tag": "screen_done",
-    "timestamp": "2026-05-28T17:23:16.931685Z",
-    "channel": "#hiring-customer-success-lead",
-    "note": "wants remote-first"
-  },
-  {
-    "candidate_name": "Mateo Gupta",
-    "stage_tag": "onsite_booked",
-    "timestamp": "2026-05-29T06:12:54.927139Z",
-    "channel": "#hiring-fde",
-    "note": "great take-home"
-  },
-  {
-    "candidate_name": "Diego Lin",
-    "stage_tag": "screen_scheduled",
-    "timestamp": "2026-05-29T07:11:00.096194Z",
-    "channel": "#hiring-growth-strategy-lead",
-    "note": "great take-home"
-  },
-  {
-    "candidate_name": "Wei Qureshi",
-    "stage_tag": "applied",
-    "timestamp": "2026-05-29T07:53:05.085496Z",
-    "channel": "#hiring-growth-strategy-lead",
-    "note": "HM very positive"
-  },
-  {
-    "candidate_name": "Tomas Hoffman",
-    "stage_tag": "applied",
-    "timestamp": "2026-05-31T00:51:56.377737Z",
-    "channel": "#hiring-growth-strategy-lead",
-    "note": "HM very positive"
-  },
-  {
-    "candidate_name": "Rosa Gupta",
-    "stage_tag": "applied",
-    "timestamp": "2026-05-31T10:18:54.748534Z",
-    "channel": "#hiring-fde",
-    "note": "HM very positive"
-  },
-  {
-    "candidate_name": "Iris Lin",
-    "stage_tag": "applied",
-    "timestamp": "2026-05-31T22:08:57.470264Z",
-    "channel": "#hiring-growth-strategist",
-    "note": "HM very positive"
-  },
-  {
-    "candidate_name": "Diego Lin",
-    "stage_tag": "screen_done",
-    "timestamp": "2026-06-01T16:19:20.066282Z",
-    "channel": "#hiring-growth-strategy-lead",
-    "note": "strong systems background"
-  },
-  {
-    "candidate_name": "Tomas Hoffman",
-    "stage_tag": "intro_call_booked",
-    "timestamp": "2026-06-02T17:55:22.614299Z",
-    "channel": "#hiring-growth-strategy-lead",
-    "note": "strong systems background"
-  },
-  {
-    "candidate_name": "Elias Bianchi",
+    "candidate_name": "Viktor Rossi",
     "stage_tag": "finished_onsite",
-    "timestamp": "2026-06-03T05:38:20.573048Z",
+    "timestamp": "2026-06-03T16:35:17.192878Z",
     "channel": "#hiring-growth-strategist",
     "note": "moving fast, has competing offer"
   },
   {
-    "candidate_name": "Hassan Volkov",
-    "stage_tag": "onsite_booked",
-    "timestamp": "2026-06-03T06:33:11.353378Z",
-    "channel": "#hiring-growth-strategist",
-    "note": "HM very positive"
-  },
-  {
-    "candidate_name": "Freya Chen",
-    "stage_tag": "finished_onsite",
-    "timestamp": "2026-06-03T13:12:16.445287Z",
-    "channel": "#hiring-growth-strategy-lead",
-    "note": "strong systems background"
-  },
-  {
-    "candidate_name": "Clara Hussain",
-    "stage_tag": "passed_screen",
-    "timestamp": "2026-06-04T06:01:05.705982Z",
-    "channel": "#hiring-growth-strategist",
-    "note": "great take-home"
-  },
-  {
-    "candidate_name": "Rosa Brandt",
-    "stage_tag": "offer_out",
-    "timestamp": "2026-06-05T02:11:41.022697Z",
-    "channel": "#hiring-fde",
-    "note": "moving fast, has competing offer"
-  },
-  {
-    "candidate_name": "Pavel Volkov",
-    "stage_tag": "passed_screen",
-    "timestamp": "2026-06-05T07:18:48.193928Z",
-    "channel": "#hiring-customer-success-lead",
-    "note": "HM very positive"
-  },
-  {
-    "candidate_name": "Iris Lin",
-    "stage_tag": "intro_call_booked",
-    "timestamp": "2026-06-05T11:58:49.588970Z",
-    "channel": "#hiring-growth-strategist",
-    "note": "moving fast, has competing offer"
-  },
-  {
-    "candidate_name": "Amara Qureshi",
-    "stage_tag": "onsite_done",
-    "timestamp": "2026-06-05T16:39:25.900952Z",
-    "channel": "#hiring-fde",
-    "note": "HM very positive"
-  },
-  {
-    "candidate_name": "Diego Lin",
-    "stage_tag": "onsite_booked",
-    "timestamp": "2026-06-05T17:34:35.080228Z",
-    "channel": "#hiring-growth-strategy-lead",
-    "note": "strong systems background"
-  },
-  {
-    "candidate_name": "Zain Wagner",
-    "stage_tag": "in_pipeline",
-    "timestamp": "2026-06-06T04:46:01.966518Z",
-    "channel": "#hiring-customer-success-lead",
-    "note": "strong systems background"
-  },
-  {
-    "candidate_name": "Mateo Qureshi",
-    "stage_tag": "onsite_booked",
-    "timestamp": "2026-06-06T09:31:21.568073Z",
-    "channel": "#hiring-customer-success-lead",
-    "note": "wants remote-first"
-  },
-  {
-    "candidate_name": "Hassan Volkov",
-    "stage_tag": "onsite_done",
-    "timestamp": "2026-06-06T14:34:14.370874Z",
-    "channel": "#hiring-growth-strategist",
-    "note": "great take-home"
-  },
-  {
-    "candidate_name": "Hassan Hoffman",
-    "stage_tag": "applied",
-    "timestamp": "2026-06-06T23:32:02.389173Z",
-    "channel": "#hiring-growth-strategist",
-    "note": "wants remote-first"
-  },
-  {
-    "candidate_name": "Jon Smith",
-    "stage_tag": "offer",
-    "timestamp": "2026-06-06T23:53:56.601904Z",
+    "candidate_name": "Anika Lin",
+    "stage_tag": "screen_scheduled",
+    "timestamp": "2026-06-04T09:39:42.297086Z",
     "channel": "#hiring-customer-success-lead",
     "note": "moving fast, has competing offer"
   },
   {
-    "candidate_name": "Tomas Hoffman",
+    "candidate_name": "Marek Volkov",
     "stage_tag": "screen_done",
-    "timestamp": "2026-06-07T02:42:43.485671Z",
+    "timestamp": "2026-06-04T11:37:50.812113Z",
     "channel": "#hiring-growth-strategy-lead",
-    "note": "HM very positive"
+    "note": "needs visa transfer"
   },
   {
-    "candidate_name": "Oscar Kowalski",
-    "stage_tag": "offer",
-    "timestamp": "2026-06-07T07:46:48.902790Z",
-    "channel": "#hiring-growth-strategist",
-    "note": "wants remote-first"
-  },
-  {
-    "candidate_name": "Jonathan Smith",
-    "stage_tag": "onsite_booked",
-    "timestamp": "2026-06-07T08:36:53.162841Z",
-    "channel": "#hiring-fde",
-    "note": "moving fast, has competing offer"
-  },
-  {
-    "candidate_name": "Mateo Gupta",
+    "candidate_name": "Lena Brandt",
     "stage_tag": "offer_out",
-    "timestamp": "2026-06-07T09:47:02.856407Z",
-    "channel": "#hiring-fde",
-    "note": "wants remote-first"
-  },
-  {
-    "candidate_name": "Anika Gupta",
-    "stage_tag": "screen_done",
-    "timestamp": "2026-06-07T10:04:33.593424Z",
-    "channel": "#hiring-growth-strategist",
-    "note": "HM very positive"
-  },
-  {
-    "candidate_name": "Wei Qureshi",
-    "stage_tag": "onsite_scheduled",
-    "timestamp": "2026-06-07T10:12:45.444504Z",
+    "timestamp": "2026-06-04T14:53:12.256516Z",
     "channel": "#hiring-growth-strategy-lead",
     "note": "asked about equity split"
   },
   {
-    "candidate_name": "Owen Hoffman",
+    "candidate_name": "Marek Amini",
+    "stage_tag": "passed_screen",
+    "timestamp": "2026-06-04T16:53:21.804654Z",
+    "channel": "#hiring-customer-success-lead",
+    "note": "wants remote-first"
+  },
+  {
+    "candidate_name": "Anika Lin",
     "stage_tag": "screen_done",
-    "timestamp": "2026-06-07T18:55:12.344867Z",
-    "channel": "#hiring-fde",
+    "timestamp": "2026-06-05T13:24:06.670622Z",
+    "channel": "#hiring-customer-success-lead",
     "note": "strong systems background"
   },
   {
-    "candidate_name": "Rosa Gupta",
-    "stage_tag": "screen_done",
-    "timestamp": "2026-06-08T07:48:04.698199Z",
+    "candidate_name": "Marek Mendez",
+    "stage_tag": "finished_onsite",
+    "timestamp": "2026-06-06T04:25:00.902153Z",
+    "channel": "#hiring-customer-success-lead",
+    "note": "wants remote-first"
+  },
+  {
+    "candidate_name": "Leila Farouk",
+    "stage_tag": "passed_screen",
+    "timestamp": "2026-06-06T10:58:29.932280Z",
+    "channel": "#hiring-growth-strategist",
+    "note": "strong systems background"
+  },
+  {
+    "candidate_name": "Tomas Haddad",
+    "stage_tag": "onsite_scheduled",
+    "timestamp": "2026-06-06T11:00:19.552998Z",
+    "channel": "#hiring-growth-strategist",
+    "note": "HM very positive"
+  },
+  {
+    "candidate_name": "Arjun Qureshi",
+    "stage_tag": "onsite_booked",
+    "timestamp": "2026-06-06T13:59:56.898928Z",
+    "channel": "#hiring-growth-strategist",
+    "note": "great take-home"
+  },
+  {
+    "candidate_name": "Arjun Qureshi",
+    "stage_tag": "finished_onsite",
+    "timestamp": "2026-06-06T17:19:40.198093Z",
+    "channel": "#hiring-growth-strategist",
+    "note": "moving fast, has competing offer"
+  },
+  {
+    "candidate_name": "Jon Smith",
+    "stage_tag": "intro_call_booked",
+    "timestamp": "2026-06-06T21:04:55.866418Z",
+    "channel": "#hiring-customer-success-lead",
+    "note": "asked about equity split"
+  },
+  {
+    "candidate_name": "Yuki Dubois",
+    "stage_tag": "intro_call_booked",
+    "timestamp": "2026-06-07T00:39:17.152476Z",
+    "channel": "#hiring-customer-success-lead",
+    "note": "asked about equity split"
+  },
+  {
+    "candidate_name": "Clara Tanaka",
+    "stage_tag": "offer_out",
+    "timestamp": "2026-06-07T01:19:27.974532Z",
+    "channel": "#hiring-fde",
+    "note": "needs visa transfer"
+  },
+  {
+    "candidate_name": "Ingrid Mendez",
+    "stage_tag": "offer_out",
+    "timestamp": "2026-06-07T01:41:00.485765Z",
     "channel": "#hiring-fde",
     "note": "HM very positive"
   },
   {
-    "candidate_name": "Hassan Hoffman",
-    "stage_tag": "screen_scheduled",
-    "timestamp": "2026-06-08T08:02:18.154074Z",
+    "candidate_name": "Amara Lin",
+    "stage_tag": "finished_onsite",
+    "timestamp": "2026-06-07T06:55:50.034903Z",
+    "channel": "#hiring-customer-success-lead",
+    "note": "great take-home"
+  },
+  {
+    "candidate_name": "Pavel Moreno",
+    "stage_tag": "passed_screen",
+    "timestamp": "2026-06-07T08:15:17.452388Z",
     "channel": "#hiring-growth-strategist",
     "note": "moving fast, has competing offer"
+  },
+  {
+    "candidate_name": "Leila Rossi",
+    "stage_tag": "intro_call_booked",
+    "timestamp": "2026-06-07T18:10:31.287996Z",
+    "channel": "#hiring-fde",
+    "note": "needs visa transfer"
+  },
+  {
+    "candidate_name": "Ingrid Reyes",
+    "stage_tag": "onsite_scheduled",
+    "timestamp": "2026-06-07T19:08:30.259626Z",
+    "channel": "#hiring-growth-strategy-lead",
+    "note": "strong systems background"
+  },
+  {
+    "candidate_name": "Oscar Dubois",
+    "stage_tag": "onsite_done",
+    "timestamp": "2026-06-08T09:00:00Z",
+    "channel": "#hiring-growth-strategy-lead",
+    "note": "needs visa transfer"
   }
 ]
