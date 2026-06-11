@@ -1,0 +1,22 @@
+# Bundled vendor documentation (reference material, not source)
+arg_parse_docs/
+lang_chain_docs/
+notion_docs/
+pyaml_docs/
+pydantic_docs/
+rapid_fuzz_docs/
+rich_docs/
+
+# Markdown planning/reference docs
+*.md
+# README ships with the repo (SPEC deliverable)
+!README.md
+
+# Runtime outputs and secrets (per BUILD_PLAN M0)
+out/
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/

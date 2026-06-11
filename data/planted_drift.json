@@ -1,0 +1,45 @@
+{
+  "n": 30,
+  "seed": 42,
+  "as_of": "2026-06-08T09:00:00Z",
+  "healthy_count": 16,
+  "planted": {
+    "stage_mismatch": [
+      "c_001",
+      "c_002",
+      "c_003",
+      "c_004"
+    ],
+    "ghost_in_ats": [
+      "c_005",
+      "c_006"
+    ],
+    "ghost_in_tracking": [
+      "Elias Novak",
+      "Arjun Larsen"
+    ],
+    "stale": [
+      "c_007",
+      "c_008",
+      "c_009"
+    ],
+    "scheduling_limbo": [
+      "c_010",
+      "c_011"
+    ],
+    "owner_gap": [
+      "c_012"
+    ],
+    "duplicate_suspect": [
+      [
+        "c_013",
+        "c_014"
+      ]
+    ]
+  },
+  "fuzzy_resolution_case": {
+    "id": "c_024",
+    "ats_name": "Ifeoma Pillai",
+    "logged_as": "Ifeo Pillai"
+  }
+}

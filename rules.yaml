@@ -1,0 +1,32 @@
+# Thresholds and weights for drift detection and triage.
+# Edit values here; no code changes needed.
+
+stale_days: 7            # no ATS movement for this many days => stale
+limbo_days: 3            # days after passing a stage with no future step => limbo
+# rapidfuzz WRatio score (0-100) to flag near-duplicate names.
+# 85 catches nickname pairs: WRatio("Jon Smith", "Jonathan Smith") = 85.5.
+# The data generator filters sampled names at this same threshold, so clean
+# records can never collide with it.
+duplicate_threshold: 85
+
+roles_in_scope:
+  - FDE
+  - Growth Strategist
+  - Customer Success Lead
+  - Growth Strategy Lead
+
+# Severity assigned per discrepancy type when triage runs offline (--no-llm),
+# and used as a prior hint for the investigation agent.
+severity_weights:
+  ghost_in_ats: urgent
+  ghost_in_tracking: urgent
+  stage_mismatch: attention
+  stale: attention
+  scheduling_limbo: attention
+  owner_gap: lag
+  duplicate_suspect: lag
+
+llm:
+  model: claude-sonnet-4-6
+  max_tool_calls: 8      # hard cap per discrepancy, enforced in our tool wrapper
+  recursion_limit: 20    # framework-level backstop for the agent graph
