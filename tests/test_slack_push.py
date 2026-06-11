@@ -98,6 +98,35 @@ class TestPostDraft:
         assert "approved via pipeline-auditor" in kwargs["text"]
         assert channel == "#hiring-fde"
 
+    def test_missing_role_channel_falls_back_with_note(self, monkeypatch):
+        from slack_sdk.errors import SlackApiError
+
+        monkeypatch.setenv("SLACK_BOT_TOKEN", "xoxb-test")
+        fake_client = MagicMock()
+        not_found = SlackApiError("nope", response={"error": "channel_not_found"})
+        fake_client.chat_postMessage.side_effect = [not_found, {"ok": True}]
+        with patch("slack_sdk.WebClient", return_value=fake_client):
+            channel = post_draft(self.make_item(), fallback_channel="#hiring-ops")
+        assert channel == "#hiring-ops"
+        retry_kwargs = fake_client.chat_postMessage.call_args_list[1].kwargs
+        assert retry_kwargs["channel"] == "#hiring-ops"
+        assert "intended channel #hiring-fde" in retry_kwargs["text"]
+
+    def test_other_slack_errors_propagate(self, monkeypatch):
+        from slack_sdk.errors import SlackApiError
+
+        monkeypatch.setenv("SLACK_BOT_TOKEN", "xoxb-test")
+        fake_client = MagicMock()
+        fake_client.chat_postMessage.side_effect = SlackApiError(
+            "nope", response={"error": "invalid_auth"})
+        with patch("slack_sdk.WebClient", return_value=fake_client):
+            try:
+                post_draft(self.make_item(), fallback_channel="#hiring-ops")
+                raise AssertionError("expected SlackApiError")
+            except SlackApiError:
+                pass
+        assert fake_client.chat_postMessage.call_count == 1  # no retry
+
     def test_missing_channel_raises(self, monkeypatch):
         monkeypatch.setenv("SLACK_BOT_TOKEN", "xoxb-test")
         item = self.make_item().model_copy(update={"slack_channel": None})

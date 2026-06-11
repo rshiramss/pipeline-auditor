@@ -168,8 +168,10 @@ def _post_approved(item: QueueItem, console: Console) -> None:
         console.print(Text("Slack not configured -- draft saved locally only",
                            style="caption"))
         return
+    from auditor.config import load_rules
     try:
-        channel = slack_push.post_draft(item)
+        fallback = load_rules().slack.default_channel
+        channel = slack_push.post_draft(item, fallback_channel=fallback)
         console.print(f"[ok]posted to {channel}[/]")
     except Exception as error:  # noqa: BLE001 -- network/API errors vary
         console.print(f"[#e5484d]Slack post failed:[/] {error}")
