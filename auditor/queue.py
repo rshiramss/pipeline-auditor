@@ -34,9 +34,27 @@ DRAFTS_DIR = "sent_drafts"
 
 # ---------------------------------------------------------------- persistence
 
+def resolve_channel(d: Discrepancy, pipeline, rules) -> str:
+    """Slack channel for a discrepancy: the candidate's role channel; for
+    tracking-only ghosts, the channel the entries were logged in."""
+    for party in d.candidates_involved:
+        candidate = pipeline.candidates.get(party)
+        if candidate is not None:
+            slug = candidate.role.lower().replace(" ", "-")
+            return rules.slack.channel_template.format(role=slug)
+        for e in pipeline.entries:
+            if e.entry.candidate_name == party and e.entry.channel:
+                return e.entry.channel
+    return rules.slack.default_channel
+
+
 def build_queue_items(discrepancies: list[Discrepancy],
-                      triages: list[TriageResult]) -> list[QueueItem]:
-    return [QueueItem(fingerprint=d.fingerprint, discrepancy=d, triage=t)
+                      triages: list[TriageResult],
+                      pipeline=None, rules=None) -> list[QueueItem]:
+    return [QueueItem(fingerprint=d.fingerprint, discrepancy=d, triage=t,
+                      slack_channel=(resolve_channel(d, pipeline, rules)
+                                     if pipeline is not None and rules is not None
+                                     else None))
             for d, t in zip(discrepancies, triages)]
 
 
@@ -141,6 +159,22 @@ def render_item(items: list[QueueItem], index: int) -> Group:
     )
 
 
+def _post_approved(item: QueueItem, console: Console) -> None:
+    """Send the just-approved draft to Slack. Failure never blocks the
+    decision -- the draft file above is always the local audit trail."""
+    from auditor import slack_push
+
+    if not slack_push.is_configured():
+        console.print(Text("Slack not configured -- draft saved locally only",
+                           style="caption"))
+        return
+    try:
+        channel = slack_push.post_draft(item)
+        console.print(f"[ok]posted to {channel}[/]")
+    except Exception as error:  # noqa: BLE001 -- network/API errors vary
+        console.print(f"[#e5484d]Slack post failed:[/] {error}")
+
+
 # -------------------------------------------------------------- review loop
 
 def review_queue(out_dir: str | Path, console: Console | None = None) -> None:
@@ -172,7 +206,8 @@ def review_queue(out_dir: str | Path, console: Console | None = None) -> None:
             "decided_at": datetime.now(timezone.utc)})
         if decision == Decision.APPROVED:
             path = write_draft(items[index], out_dir)
-            console.print(f"[green]draft written to {path}[/]")
+            console.print(f"[ok]draft written to {path}[/]")
+            _post_approved(items[index], console)
         save_queue(items, out_dir)  # persist every decision; quitting is safe
 
     done = sum(1 for i in items if i.decision != Decision.PENDING)

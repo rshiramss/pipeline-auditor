@@ -26,6 +26,12 @@ severity_weights:
   owner_gap: lag
   duplicate_suspect: lag
 
+slack:
+  # Approved drafts post to the role's channel; {role} is lowercased and
+  # dash-slugged (FDE -> #hiring-fde). Fallback when no role applies:
+  channel_template: "#hiring-{role}"
+  default_channel: "#hiring-ops"
+
 llm:
   # gpt-5.4-mini: small tool surface (4 tools), shallow investigations
   # (<= 8 calls), classification-grade judgment behind a human gate.

@@ -221,12 +221,20 @@ class QueueItem(BaseModel):
     triage: TriageResult
     decision: Decision = Decision.PENDING
     decided_at: datetime | None = None
+    # Where the approved draft posts (stamped at queue-build time from the
+    # candidate's role / the tracking entry's channel).
+    slack_channel: str | None = None
 
 
 class LlmRules(BaseModel):
-    model: str = "claude-sonnet-4-6"
+    model: str = "gpt-5.4-mini"
     max_tool_calls: int = 8
     recursion_limit: int = 20
+
+
+class SlackRules(BaseModel):
+    channel_template: str = "#hiring-{role}"  # {role} = lowercased, dash-slugged
+    default_channel: str = "#hiring-ops"
 
 
 class Rules(BaseModel):
@@ -238,3 +246,4 @@ class Rules(BaseModel):
     roles_in_scope: list[str] = Field(default_factory=list)
     severity_weights: dict[DiscrepancyType, Severity] = Field(default_factory=dict)
     llm: LlmRules = Field(default_factory=LlmRules)
+    slack: SlackRules = Field(default_factory=SlackRules)

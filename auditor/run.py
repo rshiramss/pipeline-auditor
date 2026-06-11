@@ -23,7 +23,8 @@ def run_audit(rules: Rules, data_dir: str | Path = "data",
     discrepancies = run_all_checks(pipeline, rules)
     triages = triage_all(discrepancies, pipeline, rules, use_llm=use_llm,
                          on_progress=on_triage_progress)
-    items = merge_queue(build_queue_items(discrepancies, triages),
+    items = merge_queue(build_queue_items(discrepancies, triages,
+                                          pipeline=pipeline, rules=rules),
                         load_queue(out_dir))
     save_queue(items, out_dir)
     return items, discrepancies

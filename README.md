@@ -94,6 +94,20 @@ positives** against it at `--n 30` and `--n 300`:
 .venv/bin/python -m pytest tests/ -q
 ```
 
+## Slack push (behind the approval gate)
+
+```bash
+# Slack app with chat:write + chat:write.public, installed to the workspace:
+# put SLACK_BOT_TOKEN=xoxb-... in .env
+```
+
+When configured, hitting `[a]pprove` in the review queue posts that draft to
+the candidate's role channel (`#hiring-fde`, …; fallback channel in
+`rules.yaml: slack`). This is the app's only Slack transmit path and it runs
+strictly **after** the human decision — the agent still never sends anything
+on its own. Without the token, approval keeps writing the draft to
+`out/sent_drafts/` only. A Slack failure never loses the decision.
+
 ## Notion push (optional path, output-only)
 
 ```bash

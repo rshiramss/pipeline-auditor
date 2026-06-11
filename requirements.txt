@@ -5,4 +5,5 @@ pyyaml==6.0.3
 rapidfuzz==3.14.5
 rich==15.0.0
 notion-client==3.1.0
+slack-sdk==3.42.0
 pytest==9.0.3
