@@ -27,6 +27,10 @@ severity_weights:
   duplicate_suspect: lag
 
 llm:
-  model: claude-sonnet-4-6
+  # gpt-5.4-mini: small tool surface (4 tools), shallow investigations
+  # (<= 8 calls), classification-grade judgment behind a human gate.
+  # Upshift to gpt-5.5 if review quality demands it (openai_docs pricing:
+  # 6.7x input cost over mini's tier sibling gpt-5.4, 40x over mini).
+  model: gpt-5.4-mini
   max_tool_calls: 8      # hard cap per discrepancy, enforced in our tool wrapper
   recursion_limit: 20    # framework-level backstop for the agent graph

@@ -150,8 +150,8 @@ def triage_discrepancy(d: Discrepancy, pipeline: CanonicalPipeline,
 
 
 def build_model(rules: Rules):
-    """Live Claude model, or None when no API key is configured."""
-    if not os.environ.get("ANTHROPIC_API_KEY"):
+    """Live OpenAI model, or None when no API key is configured."""
+    if not os.environ.get("OPENAI_API_KEY"):
         return None
     from langchain.chat_models import init_chat_model
     return init_chat_model(rules.llm.model)

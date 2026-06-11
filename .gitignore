@@ -2,6 +2,7 @@
 arg_parse_docs/
 lang_chain_docs/
 notion_docs/
+openai_docs/
 pyaml_docs/
 pydantic_docs/
 rapid_fuzz_docs/

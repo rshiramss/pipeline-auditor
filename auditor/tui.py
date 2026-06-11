@@ -76,9 +76,9 @@ def do_check(state: TuiState, console: Console) -> None:
         console.print("[yellow]no data yet -- generate first[/]")
         return
     import os
-    use_llm = bool(os.environ.get("ANTHROPIC_API_KEY"))
+    use_llm = bool(os.environ.get("OPENAI_API_KEY"))
     if not use_llm:
-        console.print("[dim]ANTHROPIC_API_KEY not set: offline triage[/]")
+        console.print("[dim]OPENAI_API_KEY not set: offline triage[/]")
     with console.status("[bold]checking...[/]") as status:
         def on_progress(d):
             status.update(f"[bold]triaging[/] {d.summary[:60]}")

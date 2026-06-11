@@ -22,7 +22,7 @@ Or run the whole loop inside one terminal UI:
 .venv/bin/python audit.py tui
 ```
 
-Without `ANTHROPIC_API_KEY` set, triage falls back to offline mode (severity
+Without `OPENAI_API_KEY` set, triage falls back to offline mode (severity
 mapped from `rules.yaml`) — the full loop still runs. With the key set, an
 investigation agent examines each discrepancy before judging it.
 
@@ -72,10 +72,12 @@ generate/load data → normalize → detect drift → agent triage → human rev
 
 ### Decisions that override the original SPEC (recorded on purpose)
 
-1. **LangChain for the agent loop** (SPEC chose the raw `anthropic` SDK).
-   `create_agent` runs the investigation; `with_structured_output(TriageJudgment)`
-   emits the validated judgment. The 8-call cap stays ours: a shared counter
-   in the tool wrappers, with the graph's `recursion_limit` as backstop.
+1. **LangChain + OpenAI for the agent loop** (SPEC chose the raw `anthropic`
+   SDK; later directives moved it to LangChain, then to OpenAI models).
+   `create_agent` runs the investigation on `gpt-5.4-mini` (see `rules.yaml`
+   for the upshift note); `with_structured_output(TriageJudgment)` emits the
+   validated judgment. The 8-call cap stays ours: a shared counter in the
+   tool wrappers, with the graph's `recursion_limit` as backstop.
 2. **Everything is committed scope** (SPEC had a cut order): full-loop TUI,
    Notion push, all six checks, fuzzy matching are all in.
 3. **`duplicate_threshold: 85`** (SPEC example said 90): measured

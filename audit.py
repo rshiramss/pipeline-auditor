@@ -30,7 +30,7 @@ def cmd_run(args: argparse.Namespace) -> None:
     rules = load_rules(args.rules)
     use_llm = not args.no_llm
     if use_llm and build_model(rules) is None:
-        console.print("[yellow]ANTHROPIC_API_KEY not set -- falling back to "
+        console.print("[yellow]OPENAI_API_KEY not set -- falling back to "
                       "offline triage (severity from rules.yaml)[/]")
         use_llm = False
 
