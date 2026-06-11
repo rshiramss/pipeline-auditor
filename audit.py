@@ -12,15 +12,15 @@ import argparse
 import os
 import sys
 
-from rich.console import Console
+from rich.panel import Panel
 from rich.table import Table
-from rich import box
 
 from auditor.config import load_dotenv, load_rules
 from auditor.models import SEVERITY_COLORS
+from auditor.theme import GREY_LINE, PANEL_BOX, make_console
 
 load_dotenv()
-console = Console()
+console = make_console()
 
 
 def cmd_run(args: argparse.Namespace) -> None:
@@ -41,15 +41,17 @@ def cmd_run(args: argparse.Namespace) -> None:
                                          use_llm=use_llm,
                                          on_triage_progress=on_progress)
 
-    table = Table(title=f"{len(discrepancies)} discrepancies", box=box.SIMPLE)
+    table = Table(box=None, header_style="stat.label", padding=(0, 2))
     table.add_column("severity")
-    table.add_column("type")
-    table.add_column("summary", overflow="fold")
+    table.add_column("type", style="stat.label")
+    table.add_column("summary", overflow="fold", style="grey74")
     for item in items:
         sev = item.triage.severity
         table.add_row(f"[{SEVERITY_COLORS[sev]}]{sev.value}[/]",
                       item.discrepancy.type.value, item.discrepancy.summary)
-    console.print(table)
+    console.print(Panel(table, title=f"{len(discrepancies)} discrepancies",
+                        title_align="left", box=PANEL_BOX,
+                        border_style=GREY_LINE))
     console.print(f"queue written to {args.out}/queue.json -- "
                   f"next: [bold]python audit.py review[/]")
 

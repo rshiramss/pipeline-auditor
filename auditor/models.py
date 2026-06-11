@@ -169,11 +169,12 @@ class Severity(str, Enum):
     INSUFFICIENT_EVIDENCE = "insufficient_evidence"
 
 
+# Rox status-pill palette (see auditor/theme.py for the derivation)
 SEVERITY_COLORS: dict[Severity, str] = {
-    Severity.URGENT: "red",
-    Severity.ATTENTION: "yellow",
-    Severity.LAG: "dim",
-    Severity.INSUFFICIENT_EVIDENCE: "cyan",
+    Severity.URGENT: "#e5484d",
+    Severity.ATTENTION: "#e8a33d",
+    Severity.LAG: "grey54",
+    Severity.INSUFFICIENT_EVIDENCE: "#9b9ef0",
 }
 
 

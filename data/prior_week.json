@@ -1,24 +1,23 @@
 {
   "Customer Success Lead": {
-    "applied": 1,
-    "onsite_scheduled": 2,
+    "screen_scheduled": 2,
+    "screen_done": 1
+  },
+  "FDE": {
+    "applied": 5,
+    "onsite_scheduled": 4,
+    "screen_scheduled": 2,
+    "onsite_done": 1,
     "screen_done": 1
   },
   "Growth Strategist": {
     "screen_done": 2,
-    "onsite_scheduled": 1,
-    "applied": 2,
-    "screen_scheduled": 1
-  },
-  "FDE": {
-    "onsite_scheduled": 2,
-    "screen_scheduled": 2,
-    "screen_done": 2,
-    "applied": 1
+    "screen_scheduled": 1,
+    "applied": 1,
+    "onsite_scheduled": 1
   },
   "Growth Strategy Lead": {
     "applied": 1,
-    "onsite_scheduled": 3,
-    "screen_scheduled": 2
+    "screen_scheduled": 1
   }
 }

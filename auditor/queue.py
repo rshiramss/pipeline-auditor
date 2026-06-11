@@ -17,7 +17,6 @@ from rich.panel import Panel
 from rich.prompt import Prompt
 from rich.table import Table
 from rich.text import Text
-from rich import box
 
 from auditor.models import (
     Decision,
@@ -27,6 +26,7 @@ from auditor.models import (
     Severity,
     TriageResult,
 )
+from auditor.theme import GREY_LINE, PANEL_BOX, make_console, two_tone
 
 QUEUE_FILE = "queue.json"
 DRAFTS_DIR = "sent_drafts"
@@ -93,22 +93,23 @@ def queue_header(items: list[QueueItem], position: int) -> Text:
     pending = [i for i in items if i.decision == Decision.PENDING]
     counts = {s: sum(1 for i in pending if i.triage.severity == s)
               for s in Severity}
-    header = Text()
-    header.append(f"item {position} / {len(items)}   ", style="bold")
+    header = two_tone("Review queue.", f"item {position} of {len(items)}")
+    header.append("   ")
     for sev in (Severity.URGENT, Severity.ATTENTION, Severity.LAG,
                 Severity.INSUFFICIENT_EVIDENCE):
         if counts[sev]:
-            header.append(f"{sev.value}: {counts[sev]}  ",
+            header.append(f"{sev.value} {counts[sev]}   ",
                           style=SEVERITY_COLORS[sev])
     return header
 
 
 def evidence_table(item: QueueItem) -> Table:
-    table = Table(box=box.SIMPLE, expand=True)
-    table.add_column("source", style="cyan", no_wrap=True)
-    table.add_column("ref", style="magenta")
-    table.add_column("value", style="green")
-    table.add_column("timestamp", style="dim")
+    table = Table(box=None, expand=True, pad_edge=False,
+                  header_style="stat.label")
+    table.add_column("source", style="grey58", no_wrap=True)
+    table.add_column("ref", style="bright_white")
+    table.add_column("value", style="bright_white")
+    table.add_column("timestamp", style="grey58")
     for ev in item.discrepancy.evidence:
         table.add_row(ev.source, ev.ref, ev.value,
                       ev.timestamp.isoformat() if ev.timestamp else "-")
@@ -119,21 +120,24 @@ def render_item(items: list[QueueItem], index: int) -> Group:
     item = items[index]
     d, t = item.discrepancy, item.triage
     summary = Text()
-    summary.append(f"{d.type.value}  ", style="bold")
+    summary.append(f"{d.type.value}  ", style="bold bright_white")
     summary.append_text(severity_badge(t.severity))
     summary.append(f"\ncandidates: {', '.join(d.candidates_involved)}\n",
-                   style="dim")
+                   style="grey58")
     summary.append(t.explanation)
     trace = Text("investigation: " + (" -> ".join(t.investigation_trace) or "(none)"),
-                 style="dim italic")
+                 style="caption")
     return Group(
         queue_header(items, index + 1),
-        Panel(summary, title="discrepancy", box=box.ROUNDED),
-        Panel(evidence_table(item), title="evidence", box=box.ROUNDED),
+        Panel(summary, title="discrepancy", title_align="left",
+              box=PANEL_BOX, border_style=GREY_LINE),
+        Panel(evidence_table(item), title="evidence", title_align="left",
+              box=PANEL_BOX, border_style=GREY_LINE),
         trace,
         Panel(Markdown(t.proposed_fix.content),
               title=f"drafted fix ({t.proposed_fix.type.value})",
-              box=box.HEAVY, border_style=SEVERITY_COLORS[t.severity]),
+              title_align="left", box=PANEL_BOX,
+              border_style=SEVERITY_COLORS[t.severity]),
     )
 
 
@@ -141,7 +145,7 @@ def render_item(items: list[QueueItem], index: int) -> Group:
 
 def review_queue(out_dir: str | Path, console: Console | None = None) -> None:
     """One screen per pending item: [a]pprove / [d]ismiss / [s]kip / [q]uit."""
-    console = console or Console()
+    console = console or make_console()
     items = load_queue(out_dir)
     if not items:
         console.print("[yellow]queue is empty -- run `python audit.py run` first[/]")
