@@ -16,9 +16,10 @@ from rich.console import Console
 from rich.table import Table
 from rich import box
 
-from auditor.config import load_rules
+from auditor.config import load_dotenv, load_rules
 from auditor.models import SEVERITY_COLORS
 
+load_dotenv()
 console = Console()
 
 
